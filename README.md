@@ -1,6 +1,8 @@
 # UAED on TBM: Original vs Super-Resolution
 
-Edge detection for metallography on the TBM dataset. Two tracks: training and evaluating UAED on the original TBM images and on a super-resolved variant (SR_TBM). Pretrained checkpoints included.
+Edge detection for metallography on the TBM dataset. Two tracks: training and evaluating UAED on the original TBM images and on a super-resolved variant (SR_TBM). 
+
+Pretrained checkpoints and datasets download available on: https://zenodo.org/records/16918388
 
 ## Repository layout
 
