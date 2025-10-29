@@ -1,0 +1,1 @@
+python eval_on_folder.py   --image_dir ../TBM_original/test/images/   --gt_dir ../SR_TBM/test/masks   --ckpt ../checkpoints/uaed_sr_tbm.pt   --out_dir /home/alexlib/boaz/neurips_paper_tbm/results_sr/   --gpu 0   --unc_vis_mode minmax --thresh_mode max_f1 --heyn_skeleton --amp --heyn_lines 50 --heyn_eval_seed 1234 --rocpr_points 256

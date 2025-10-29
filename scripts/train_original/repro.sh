@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+
+../train.py --train_image_path ../TBM_original/train/images_1024/ --train_gt_path ../SR_TBM/train/masks/ --val_image_path ../TBM_original/val/images_1024/ --val_gt_path ../SR_TBM/val/masks/ --test_image_path ../TBM_original/test/images_1024/ --test_gt_path ../SR_TBM/test/masks/ --pretrained_path ../UAED_MuGE/checkpoints/epoch-19-checkpoint.pth --distribution gs --amp --batch_size 2 --epochs 200 --lr 0.0001 --weight_decay 0.0005 --itersize 1 --std_weight 1.0 --std_weight_final 0.0 --print_freq 1000 --gpu 0 --scheduler cosine --lr_factor 0.5 --lr_patience 3 --min_lr 1e-08 --augment --mix_strategy none --mix_alpha 0.4 --rrc_size 0 --rrc_scale 0.6 1.0 --rrc_ratio 0.75 1.3333 --ema_decay 0.999 --grad_clip 1.0 --focal_alpha 0.75 --focal_gamma 2.0 --monitor ap --keep_topk 5 --unc_vis_mode percentile --unc_vis_p 99.0 --unc_vis_max 1.0

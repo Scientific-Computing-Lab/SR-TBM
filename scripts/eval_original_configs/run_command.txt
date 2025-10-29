@@ -1,0 +1,1 @@
+python eval_on_folder.py   --image_dir ../TBM_original/test/images_1024/   --gt_dir ../SR_TBM/test/masks   --ckpt ../checkpoints/uaed_tbm.pth   --out_dir ../results_original/   --gpu 0   --unc_vis_mode minmax --thresh_mode max_f1 --heyn_skeleton --amp --heyn_lines 50 --heyn_eval_seed 1234 --rocpr_points 256
