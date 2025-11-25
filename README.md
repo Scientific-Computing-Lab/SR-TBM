@@ -1,5 +1,21 @@
 # UAED on TBM: Original vs Super-Resolution
 
+> This repository is the project page for the paper  
+> **“Evaluating Diffusion-based Super-Resolution for Trustworthy Quantitative Metallography”**,  
+> published at the NeurIPS 2025 AI4Mat workshop.
+
+## Overview
+
+Recent advances in generative based super resolution(SR)has set SOTA performance on natural images upsampling. Super-resolution holds promise for improving metallographic analysis, but diffusion-based methods raise concerns about hallucinated structures that could bias quantitative results.
+We present the first systematic study of diffusion SR in quantitative metallography. Using OSEDiff with a fixed domain prompt (“metallographic image”), we generate a fourfold super-resolved version of the Texture Boundary in Metallography (TBM) dataste(SR-TBM) and train edge detectors on both original and SR images. We evaluate both pixel based edge detection metrics, and global grain size estimation (Heyn Intercpet).
+We demonstrate generative AI, under domain specific constraints, can be used to dramatically improve metallographic images quality. A human expert audit found virtually no major hallucinations. Models trained on SR-TBM achieved a comparable pixel-based performance, while demonstrating a 47% reduction in grain-size error.
+
+## Talk video
+
+[![NeurIPS 2025 AI4Mat talk](https://img.youtube.com/vi/g7aQvG_xzZE/0.jpg)](https://www.youtube.com/watch?v=g7aQvG_xzZE)
+
+## Code and data
+
 Edge detection for metallography on the TBM dataset. Two tracks: training and evaluating UAED on the original TBM images and on a super-resolved variant (SR_TBM). 
 
 Pretrained checkpoints and datasets download available on: https://zenodo.org/records/16918388
